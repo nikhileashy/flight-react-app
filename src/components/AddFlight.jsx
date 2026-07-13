@@ -1,6 +1,6 @@
 import React from "react";
-// import NavBar from "./NavBar";
 import axios from "axios";
+import NavBar from "./NavBar";
 
 const AddFlight = () => {
   const initialFormState = {
@@ -54,7 +54,7 @@ const AddFlight = () => {
 
   return (
     <div>
-      {/* <NavBar /> */}
+      <NavBar />
       <div className="container" style={{ padding: 10, margin: "50px auto" }}>
         <h1 style={{ marginBottom: 50 }}>Add Flight</h1>
 
