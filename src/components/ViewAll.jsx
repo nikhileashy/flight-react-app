@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
+import NavBar from './NavBar';
 
 const ViewAll = () => {
   const [flights, setFlights] = useState([]);
@@ -59,6 +60,8 @@ const ViewAll = () => {
   };
 
   return (
+    <>
+    <NavBar/>
     <div style={{ padding: '20px', fontFamily: 'Arial, sans-serif' }}>
       <h2>View All Flights</h2>
 
@@ -154,7 +157,8 @@ const ViewAll = () => {
           </table>
         )
       )}
-    </div>
+    </div></>
+
   );
 };
 
